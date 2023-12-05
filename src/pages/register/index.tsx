@@ -8,7 +8,7 @@ export const Register = () => {
       title={
         <ThemedTitleV2
           collapsed={false}
-          text="IOT Project"
+          text="IoT Project"
           icon={<AppIcon />}
         />
       }

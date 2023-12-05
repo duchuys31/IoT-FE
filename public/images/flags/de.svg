@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480"><path fill="#ffce00" d="M0 320h640v160.002H0z"/><path d="M0 0h640v160H0z"/><path fill="#d00" d="M0 160h640v160H0z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="600" viewBox="-15 -10 30 20" version="1.1" class="mdl-js">
+    <desc>Flag of Vietnam</desc>
+    <rect x="-20" y="-15" width="40" height="30" fill="#da251d"/>
+    <g id="g" transform="translate(0,-6)">
+        <polyline id="g1" points="0,0 0,6 4,6" fill="#ff0" transform="rotate(18)"/>
+        <use xlink:href="#g1" transform="scale(-1,1)"/>
+    </g>
+    <g id="g2" transform="rotate(72)">
+        <use xlink:href="#g"/>
+        <use xlink:href="#g" transform="rotate(72)"/>
+    </g>
+    <use xlink:href="#g2" transform="scale(-1,1)"/>
+</svg>

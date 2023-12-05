@@ -33,7 +33,7 @@ import { ForgotPassword } from "./pages/forgotPassword";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
 import { BlogShowGraph } from "./pages/graph";
-
+import Dashboard from "@mui/icons-material/Dashboard";
 const API_URL = "https://flowing-mammal-24.hasura.app/v1/graphql";
 const WS_URL = "ws://flowing-mammal-24.hasura.app/v1/graphql";
 
@@ -76,6 +76,8 @@ function App() {
                     name: "graph",
                     list: "/graph",
                     meta: {
+                      label: "Dashboard",
+                      icon: <Dashboard/>,
                       canDelete: true,
                     },
                   }
@@ -99,7 +101,7 @@ function App() {
                           Title={({ collapsed }) => (
                             <ThemedTitleV2
                               collapsed={collapsed}
-                              text="IOT Project"
+                              text="IoT Project"
                               icon={<AppIcon />}
                             />
                           )}
@@ -109,7 +111,7 @@ function App() {
                       </Authenticated>
                     }
                   >
-                    <Route index element={<NavigateToResource resource="graphs"/>}/>
+                    <Route index element={<NavigateToResource resource="graph"/>}/>
                     <Route path="/graph">
                       <Route index element={<BlogShowGraph />} />
                     </Route>

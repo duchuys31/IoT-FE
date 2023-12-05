@@ -87,7 +87,7 @@ export const Header: React.FC<RefineThemedLayoutV2HeaderProps> = ({
                         src={`/images/flags/${lang}.svg`}
                       />
                       <Typography>
-                        {lang === "en" ? "English" : "German"}
+                        {lang === "en" ? "English" : "Vietnam"}
                       </Typography>
                     </Stack>
                   </MenuItem>

@@ -46,6 +46,7 @@ export const authProvider: AuthBindings = {
     if ((username || email) && password) {
       const response = await fetch("http://localhost:8000/api/account/login/", 
         {
+          // "http://localhost:8000/api/account/login/"
           method: 'POST',
           headers: {
             "Content-Type": "application/json"
@@ -109,7 +110,7 @@ export const authProvider: AuthBindings = {
     if (token) {
       return {
         id: 1,
-        name: "John Doe",
+        name: "Ngo Khanh",
         avatar: "https://i.pravatar.cc/300",
       };
     }
